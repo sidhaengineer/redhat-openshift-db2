@@ -51,7 +51,7 @@ def login():
             msg = "Invalid Credentials"
             return render_template("login.html", msg=msg)
         
-    return render_template("login.html", msg=msg)
+    return render_template("login.html")
 
 @app.route("/logout")
 def logout():
